@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+We know that wealth of Pythagorean triplets can be evaluated from statement
+that:
+
+\[
+    \Re(z)^2 + \Im(z)^2 = |z|^2, \enspace z = (a + bi)^2
+\]
+
+Of cource, it's only wealth of them, but not all. We'll try to find it
+using that statement and if encounter that there's no such one, then
+we'll find it via program. Well, expanding we get:
+
+\[
+    \Re(z) = a^2 - b^2 \quad \Im(z) = 2ab
+\]
+\[
+    |z| = \sqrt{(a^2 - b^2)^2 + 4 a^2 b^2} = \sqrt{a^4 + 4 a^2 b^2 + b^4}
+    = a^2 + b^2
+\]
+
+Therefore:
+
+\[
+    |a^2 - b^2| + 2ab + a^2 + b^2 = 1000, \enspace a,b > 0
+\]
+
+\( a^2 - b^2 > 0 \) when \( a^2 > b^2 \). I.e. \( a > b \) for our domain.
+
+As there's two such triplets (a + b = b + a) we suppose that when
+\( a^2 - b^2 < 0 \) it's just rearrangement of terms and we only need to
+evaluate for \( a^2 - b^2 > 0 \).
+
+\[
+    a^2 + ab = 500
+\]
+\[
+    a(a + b) = 250 \cdot 2 = 125 \cdot 4 = 100 \cdot 5 = 50 \cdot 10 = 25 \cdot 20
+\]
+
+Give yourself a challenge to find (a, b). Well, (a, b) = (20, 5).
+We get that \( a = 20^2 - 5^2  = 425 \),
+\( b = 2 \cdot 20 \cdot 5 = 200 \),
+\( c = 20^2 + 5^2 = 375 \).
+
+And the answer is 31875000.
+
+\end{document}
