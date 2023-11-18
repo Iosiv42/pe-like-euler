@@ -1,2 +1,2 @@
-# pe-like-euler
-Project Euler like Euler. Solutions written in Rust
+# Project Euler like Euler (mostly not)
+Solutions for **Project Euler** written in Rust.
